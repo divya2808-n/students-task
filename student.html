@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="navbar">
+      <div class="d-flex align-items-center">
+        <button class="sidebar-toggle" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+          &#9776;
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="./image/educationimg.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="sidebar-toggle" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+          &#9776;
+        </button>
+        <a href="#admin" class="admin-link">
+          <div class="admin-avatar">A</div>
+          <span class="admin-name">Admin</span>
+        </a>
+      </div>
+    </header>
+
+    <nav class="mobile-menu">
+      <a href="/dashboard" class="mobile-menu-item">Dashboard</a>
+      <a href="/tests" class="mobile-menu-item active">Tests</a>
+      <a href="/question-banks" class="mobile-menu-item">Question Banks</a>
+      <a href="/classes" class="mobile-menu-item">Classes</a>
+      <a href="/teachers" class="mobile-menu-item">Teachers</a>
+    </nav>
+
+    <main class="main-container">
+      <aside class="sidebar-container">
+        <div class="sidebar-content">
+          <div class="sidebar-header">
+            <button class="btn btn-primary add-question-btn">ADD QUESTION</button>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section-title">SNAP SHOT</div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section-title">SECTIONS</div>
+            <div class="sidebar-menu">
+              <a href="#new-section" class="sidebar-menu-item">+ New Section</a>
+              <a href="#section-1" class="sidebar-menu-item red">Section 1</a>
+              <a href="#section-2" class="sidebar-menu-item blue">Section 2</a>
+              <a href="#uncategorized" class="sidebar-menu-item">Uncategorized (5)</a>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section-title">TEST INFORMATION</div>
+            <div class="sidebar-menu">
+              <div class="sidebar-menu-item">Marks : (10)</div>
+              <div class="sidebar-menu-item">No. of Q : (10)</div>
+              <div class="sidebar-menu-item">Neg : (10)</div>
+              <div class="sidebar-menu-item">Duration : (10)</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="content-container">
+        <div class="test-card">
+          <div class="test-header">
+            <h3 class="test-title">Test 1 Questions</h3>
+            <div class="d-flex">
+              <button class="btn full-view-btn">Full View</button>
+              <button class="btn view-button">View</button>
+            </div>
+          </div>
+
+          <div class="search-container">
+            <input placeholder="Search" class="search-input" type="text" />
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-questions">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th>Questions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the primary purpose of React in web development, and how does it contribute to building dynamic and interactive user interfaces?</div>
+                    <div class="answer-text">React is primarily used for building user interfaces, allowing developers to create reusable UI components and manage the state of applications efficiently.</div>
+                  </td>
+                </tr>
+        <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the result of 5 + 3?</div>
+                    <div class="answer-text">8</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Is React a JavaScript library?</div>
+                    <div class="answer-text">Yes, React is a JavaScript library for building user interfaces.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Explain the concept of JSX in React.</div>
+                    <div class="answer-text">JSX is a syntax extension for JavaScript that looks similar to HTML. It allows you to write HTML-like code in your JavaScript files, making it easier to describe what the UI should look like.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the capital of France?</div>
+                    <div class="answer-text">Paris</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Define Newton's Second Law of Motion.</div>
+                    <div class="answer-text">Newton's Second Law states that Force = Mass × Acceleration (F = ma).</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the square root of 144?</div>
+                    <div class="answer-text">12</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What does HTML stand for?</div>
+                    <div class="answer-text">HyperText Markup Language</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Who developed the Python programming language?</div>
+                    <div class="answer-text">Guido van Rossum</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the chemical symbol for Gold?</div>
+                    <div class="answer-text">Au</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Solve: 15 × 6</div>
+                    <div class="answer-text">90</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Which planet is known as the Red Planet?</div>
+                    <div class="answer-text">Mars</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Explain the concept of Object-Oriented Programming.</div>
+                    <div class="answer-text">Object-Oriented Programming (OOP) is a programming paradigm that organizes software into objects that contain both data and methods.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is the function of RAM in a computer?</div>
+                    <div class="answer-text">RAM (Random Access Memory) is used to store and access data that is actively being used by the system, making operations faster.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">Calculate the area of a rectangle with length 10cm and width 5cm.</div>
+                    <div class="answer-text">50 cm²</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div class="question-text clickable">What is an algorithm?</div>
+                    <div class="answer-text">An algorithm is a step-by-step procedure or formula for solving a problem.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="footer-text">Showing 1 out of 16 Tests</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

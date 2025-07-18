@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 100px;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+.mobile-menu-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Layout Containers */
+.main-container {
+  display: flex;
+}
+
+.sidebar-container {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-container.hidden {
+  transform: translateX(-100%);
+}
+
+.content-container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar-header {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu-item {
+  padding: 8px 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.sidebar-menu-item.red {
+  background-color: #ffe5e5;
+}
+
+.sidebar-menu-item.blue {
+  background-color: #e5e5ff;
+}
+
+.sidebar-section-title {
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+/* Content Area */
+.test-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.table-responsive {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.question-text {
+  font-weight: bold;
+  color: blue;
+}
+
+.answer-text {
+  color: #666;
+  margin-top: 5px;
+  
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #999;
+}
+.answer-text {
+  display: none;
+  margin-top: 5px;
+  color: #666;
+}
+
+.question-text.clickable {
+  cursor: pointer;
+  color: #007bff;
+}
